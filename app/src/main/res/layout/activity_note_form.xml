@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#FFB7C5"
+    tools:context="com.sharanjit.mytreatment.notes.NoteForm">
+
+    <TextView android:text="Notes Form"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:id="@+id/textView31" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Notes:"
+        android:id="@+id/nfnotep"
+        android:layout_below="@+id/textView31"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/nfnotest"
+        android:lines="3"
+        android:editable="false"
+        android:maxLines="3"
+        android:gravity="top"
+        android:layout_alignTop="@+id/nfnotep"
+        android:layout_alignLeft="@+id/nfweightt"
+        android:layout_alignStart="@+id/nfweightt"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/nfweightt" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Weight:"
+        android:id="@+id/nfweightp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nfweightt"
+        android:layout_alignBottom="@+id/nfweightp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/nfweightp"
+        android:layout_toEndOf="@+id/nfweightp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:id="@+id/nfdelb"
+        android:layout_below="@+id/nfweightp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="60dp"
+        android:onClick="DeleteNoteButtonClick" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/nfokb"
+        android:layout_alignBottom="@+id/nfdelb"
+        android:layout_toRightOf="@+id/nfdelb"
+        android:layout_toEndOf="@+id/nfdelb"
+        android:layout_marginLeft="30dp"
+        android:onClick="nfokbuttonc" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:id="@+id/nfcancelb"
+        android:layout_alignBottom="@+id/nfokb"
+        android:layout_toRightOf="@+id/nfokb"
+        android:layout_toEndOf="@+id/nfokb"
+        android:layout_marginLeft="30dp"
+        android:onClick="nfcancelbuttonc" />
+
+</RelativeLayout>
+
+

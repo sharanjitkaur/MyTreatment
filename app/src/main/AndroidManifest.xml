@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sharanjit.mytreatment" >
+
+    <shape
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:shape="oval" >
+        <gradient
+            android:angle="270"
+            android:endColor="#80FF00FF"
+            android:startColor="#FFFF0000" />
+    </shape>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/smiley"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TreatmentList"
+            android:label="@string/title_activity_treatment_list" >
+        </activity>
+        <activity
+            android:name=".TreatmentForm"
+            android:label="@string/title_activity_treatment_form" >
+        </activity>
+        <activity
+            android:name=".doctor.DoctorList"
+            android:label="@string/title_activity_doctor_list" >
+        </activity>
+        <activity
+            android:name=".doctor.DoctorForm"
+            android:label="@string/title_activity_doctor_form" >
+        </activity>
+        <activity
+            android:name=".notes.NoteForm"
+            android:label="@string/title_activity_note_form" >
+        </activity>
+        <activity
+            android:name=".notes.NoteList"
+            android:label="@string/title_activity_note_list" >
+        </activity>
+        <activity
+            android:name=".medicine.MedicineForm"
+            android:label="@string/title_activity_medicine_form" >
+        </activity>
+        <activity
+            android:name=".medicine.MedicineList"
+            android:label="@string/title_activity_medicine_list" >
+        </activity>
+        <activity
+            android:name=".Chart"
+            android:label="@string/title_activity_chart" >
+        </activity>
+        <activity
+            android:name=".doctor.AllDoctorList"
+            android:label="@string/title_activity_all_doctor_list" >
+        </activity>
+        <activity
+            android:name=".notes.AllNoteList"
+            android:label="@string/title_activity_all_note_list" >
+        </activity>
+    </application>
+
+</manifest>

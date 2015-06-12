@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants">
+
+    <TableLayout
+        android:id="@+id/chlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:id="@+id/chthrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/chcolh1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.30"
+                android:textSize="20dp"
+                android:text=""/>
+            <TextView
+                android:id="@+id/chcolh2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.45"
+                android:maxWidth="100dp"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:text="" />
+            <TextView
+                android:id="@+id/chcolh3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:textSize="20dp"
+                android:text="" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/chtrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/chcol1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.30"
+                android:textColor="#000"
+                android:textSize="15dp"/>
+            <TextView
+                android:id="@+id/chcol2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.45"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:gravity="top"/>
+            <TextView
+                android:id="@+id/chcol3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:textColor="#000"
+                android:textSize="13dp" />
+
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

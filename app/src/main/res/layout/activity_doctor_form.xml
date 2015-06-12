@@ -1,0 +1,156 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#FFB7C5"
+    tools:context="com.sharanjit.mytreatment.doctor.DoctorForm">
+
+    <TextView android:text="Doctor Form"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:id="@+id/textView31" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Doctor Name:"
+        android:id="@+id/tvdocname"
+        android:layout_below="@+id/textView31"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Doctor Address1:"
+        android:id="@+id/tvdadd1"
+        android:layout_below="@+id/tvdocname"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Doctor Address2:"
+        android:id="@+id/tvdadd2"
+        android:layout_below="@+id/tvdadd1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Doctor Phone:"
+        android:id="@+id/tvdphone"
+        android:layout_below="@+id/tvdadd2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Doctor Notes:"
+        android:id="@+id/tvdnotes"
+        android:layout_below="@+id/tvdphone"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dnamet"
+        android:layout_above="@+id/tvdadd1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/tvdadd1"
+        android:layout_toEndOf="@+id/tvdadd1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dadd1t"
+        android:layout_below="@+id/tvdocname"
+        android:layout_toRightOf="@+id/tvdadd1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dadd2t"
+        android:layout_alignBottom="@+id/tvdadd2"
+        android:layout_toRightOf="@+id/tvdadd1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dphonet"
+        android:layout_alignBottom="@+id/tvdphone"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/tvdadd2"
+        android:layout_toEndOf="@+id/tvdadd2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/dnotest"
+        android:lines="3"
+        android:editable="false"
+        android:maxLines="3"
+        android:gravity="top"
+        android:layout_alignTop="@+id/tvdnotes"
+        android:layout_alignLeft="@+id/dphonet"
+        android:layout_alignStart="@+id/dphonet" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:id="@+id/dfdelb"
+        android:layout_below="@+id/dnotest"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="39dp"
+        android:onClick="DeleteDoctorButtonClick" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/dfsubb"
+        android:layout_alignTop="@+id/dfdelb"
+        android:layout_toRightOf="@+id/tvdnotes"
+        android:layout_toEndOf="@+id/tvdnotes"
+        android:onClick="dfokbuttonc" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:id="@+id/dfcancelb"
+        android:layout_alignTop="@+id/dfsubb"
+        android:layout_toRightOf="@+id/dfsubb"
+        android:layout_toEndOf="@+id/dfsubb"
+        android:layout_marginLeft="42dp"
+        android:layout_marginStart="42dp"
+        android:onClick="doctorformcancelbuttonc" />
+
+</RelativeLayout>
